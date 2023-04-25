@@ -16,5 +16,10 @@ namespace pryResumenLabo
         {
             InitializeComponent();
         }
+
+        private void btnClinica_Click(object sender, EventArgs e)
+        {
+            new frmClinica().ShowDialog();
+        }
     }
 }

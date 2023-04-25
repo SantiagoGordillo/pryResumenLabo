@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsEspecialidades.cs" />
+    <Compile Include="clsMedicos.cs" />
+    <Compile Include="frmClinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClinica.Designer.cs">
+      <DependentUpon>frmClinica.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +62,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmClinica.resx">
+      <DependentUpon>frmClinica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
