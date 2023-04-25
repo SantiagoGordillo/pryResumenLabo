@@ -21,5 +21,10 @@ namespace pryResumenLabo
         {
             new frmClinica().ShowDialog();
         }
+
+        private void btnTreeView_Click(object sender, EventArgs e)
+        {
+            new frmTreeView().ShowDialog();
+        }
     }
 }

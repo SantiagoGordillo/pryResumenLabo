@@ -30,11 +30,13 @@
         {
             this.btnClinica = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTreeView = new System.Windows.Forms.TextBox();
+            this.btnTreeView = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClinica
             // 
-            this.btnClinica.Location = new System.Drawing.Point(55, 54);
+            this.btnClinica.Location = new System.Drawing.Point(60, 54);
             this.btnClinica.Name = "btnClinica";
             this.btnClinica.Size = new System.Drawing.Size(107, 41);
             this.btnClinica.TabIndex = 0;
@@ -52,11 +54,33 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Cargar una grilla y un listbox";
             // 
+            // txtTreeView
+            // 
+            this.txtTreeView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTreeView.Enabled = false;
+            this.txtTreeView.Location = new System.Drawing.Point(256, 22);
+            this.txtTreeView.Name = "txtTreeView";
+            this.txtTreeView.Size = new System.Drawing.Size(130, 26);
+            this.txtTreeView.TabIndex = 3;
+            this.txtTreeView.Text = "Uso del TreeView";
+            // 
+            // btnTreeView
+            // 
+            this.btnTreeView.Location = new System.Drawing.Point(268, 54);
+            this.btnTreeView.Name = "btnTreeView";
+            this.btnTreeView.Size = new System.Drawing.Size(107, 41);
+            this.btnTreeView.TabIndex = 2;
+            this.btnTreeView.Text = "TreeView";
+            this.btnTreeView.UseVisualStyleBackColor = true;
+            this.btnTreeView.Click += new System.EventHandler(this.btnTreeView_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 434);
+            this.Controls.Add(this.txtTreeView);
+            this.Controls.Add(this.btnTreeView);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnClinica);
             this.Name = "frmMain";
@@ -70,6 +94,8 @@
 
         private System.Windows.Forms.Button btnClinica;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTreeView;
+        private System.Windows.Forms.Button btnTreeView;
     }
 }
 
