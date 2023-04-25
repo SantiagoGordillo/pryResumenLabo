@@ -32,6 +32,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtTreeView = new System.Windows.Forms.TextBox();
             this.btnTreeView = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnArchivo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClinica
@@ -58,7 +60,7 @@
             // 
             this.txtTreeView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTreeView.Enabled = false;
-            this.txtTreeView.Location = new System.Drawing.Point(256, 22);
+            this.txtTreeView.Location = new System.Drawing.Point(249, 22);
             this.txtTreeView.Name = "txtTreeView";
             this.txtTreeView.Size = new System.Drawing.Size(130, 26);
             this.txtTreeView.TabIndex = 3;
@@ -66,7 +68,7 @@
             // 
             // btnTreeView
             // 
-            this.btnTreeView.Location = new System.Drawing.Point(268, 54);
+            this.btnTreeView.Location = new System.Drawing.Point(261, 54);
             this.btnTreeView.Name = "btnTreeView";
             this.btnTreeView.Size = new System.Drawing.Size(107, 41);
             this.btnTreeView.TabIndex = 2;
@@ -74,11 +76,33 @@
             this.btnTreeView.UseVisualStyleBackColor = true;
             this.btnTreeView.Click += new System.EventHandler(this.btnTreeView_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(414, 22);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(214, 26);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "Crear, modificar y leer archivo";
+            // 
+            // btnArchivo
+            // 
+            this.btnArchivo.Location = new System.Drawing.Point(468, 54);
+            this.btnArchivo.Name = "btnArchivo";
+            this.btnArchivo.Size = new System.Drawing.Size(107, 41);
+            this.btnArchivo.TabIndex = 4;
+            this.btnArchivo.Text = "Archivo";
+            this.btnArchivo.UseVisualStyleBackColor = true;
+            this.btnArchivo.Click += new System.EventHandler(this.btnArchivo_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 434);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnArchivo);
             this.Controls.Add(this.txtTreeView);
             this.Controls.Add(this.btnTreeView);
             this.Controls.Add(this.textBox1);
@@ -96,6 +120,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox txtTreeView;
         private System.Windows.Forms.Button btnTreeView;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnArchivo;
     }
 }
 

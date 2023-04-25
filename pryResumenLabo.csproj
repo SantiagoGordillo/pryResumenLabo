@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="clsEspecialidades.cs" />
     <Compile Include="clsMedicos.cs" />
+    <Compile Include="frmArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArchivo.Designer.cs">
+      <DependentUpon>frmArchivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmClinica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArchivo.resx">
+      <DependentUpon>frmArchivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmClinica.resx">
       <DependentUpon>frmClinica.cs</DependentUpon>
     </EmbeddedResource>

@@ -16,15 +16,17 @@ namespace pryResumenLabo
         {
             InitializeComponent();
         }
-
         private void btnClinica_Click(object sender, EventArgs e)
         {
             new frmClinica().ShowDialog();
         }
-
         private void btnTreeView_Click(object sender, EventArgs e)
         {
             new frmTreeView().ShowDialog();
+        }
+        private void btnArchivo_Click(object sender, EventArgs e)
+        {
+            new frmArchivo().ShowDialog();
         }
     }
 }

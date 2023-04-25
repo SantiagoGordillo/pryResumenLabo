@@ -42,7 +42,6 @@ namespace pryResumenLabo
                 this.Close();
             }
         }
-
         private void btnVer_Click(object sender, EventArgs e)
         {
             grillaMedicos.Rows.Clear();
@@ -57,7 +56,6 @@ namespace pryResumenLabo
                 }
             }
         }
-
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             lbMedicos.DisplayMember = "nombre";
