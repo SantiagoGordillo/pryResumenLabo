@@ -28,5 +28,21 @@ namespace pryResumenLabo
         {
             new frmArchivo().ShowDialog();
         }
+        private void btnDato_Click(object sender, EventArgs e)
+        {
+            new frmTemperaturaCiudad().ShowDialog();
+        }
+        private void btnFrutas_Click(object sender, EventArgs e)
+        {
+            new frmFrutas().ShowDialog();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new frmMundo().ShowDialog();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new frmGuardarArchivo().ShowDialog();
+        }
     }
 }

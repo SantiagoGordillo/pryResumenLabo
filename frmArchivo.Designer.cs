@@ -97,6 +97,7 @@
             this.Controls.Add(this.txtFrutas);
             this.Controls.Add(this.btnGrabar);
             this.Name = "frmArchivo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Crear, modificar y leer archivo";
             this.ResumeLayout(false);
             this.PerformLayout();

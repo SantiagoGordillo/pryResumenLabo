@@ -46,13 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsEspecialidades.cs" />
-    <Compile Include="clsMedicos.cs" />
+    <Compile Include="Clases\clsAlumnos.cs" />
+    <Compile Include="Clases\clsBarrios.cs" />
+    <Compile Include="Clases\clsEspecialidades.cs" />
+    <Compile Include="Clases\clsLocalidades.cs" />
+    <Compile Include="Clases\clsMedicos.cs" />
+    <Compile Include="Clases\clsTemperaturas.cs" />
+    <Compile Include="Clases\clsPaises.cs" />
     <Compile Include="frmArchivo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmArchivo.Designer.cs">
       <DependentUpon>frmArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarNombre.Designer.cs">
+      <DependentUpon>frmBuscarNombre.cs</DependentUpon>
     </Compile>
     <Compile Include="frmClinica.cs">
       <SubType>Form</SubType>
@@ -60,11 +71,35 @@
     <Compile Include="frmClinica.Designer.cs">
       <DependentUpon>frmClinica.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFrutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFrutas.Designer.cs">
+      <DependentUpon>frmFrutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuardarArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuardarArchivo.Designer.cs">
+      <DependentUpon>frmGuardarArchivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMundo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMundo.Designer.cs">
+      <DependentUpon>frmMundo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemperaturaCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemperaturaCiudad.Designer.cs">
+      <DependentUpon>frmTemperaturaCiudad.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTreeView.cs">
       <SubType>Form</SubType>
@@ -77,11 +112,26 @@
     <EmbeddedResource Include="frmArchivo.resx">
       <DependentUpon>frmArchivo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarNombre.resx">
+      <DependentUpon>frmBuscarNombre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmClinica.resx">
       <DependentUpon>frmClinica.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFrutas.resx">
+      <DependentUpon>frmFrutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuardarArchivo.resx">
+      <DependentUpon>frmGuardarArchivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMundo.resx">
+      <DependentUpon>frmMundo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemperaturaCiudad.resx">
+      <DependentUpon>frmTemperaturaCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTreeView.resx">
       <DependentUpon>frmTreeView.cs</DependentUpon>

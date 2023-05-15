@@ -43,7 +43,7 @@
             // 
             this.cbEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEspecialidad.FormattingEnabled = true;
-            this.cbEspecialidad.Location = new System.Drawing.Point(17, 52);
+            this.cbEspecialidad.Location = new System.Drawing.Point(57, 52);
             this.cbEspecialidad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbEspecialidad.Name = "cbEspecialidad";
             this.cbEspecialidad.Size = new System.Drawing.Size(231, 28);
@@ -52,7 +52,7 @@
             // lblEspecialidades
             // 
             this.lblEspecialidades.AutoSize = true;
-            this.lblEspecialidades.Location = new System.Drawing.Point(13, 27);
+            this.lblEspecialidades.Location = new System.Drawing.Point(56, 27);
             this.lblEspecialidades.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEspecialidades.Name = "lblEspecialidades";
             this.lblEspecialidades.Size = new System.Drawing.Size(235, 20);
@@ -61,7 +61,7 @@
             // 
             // btnVer
             // 
-            this.btnVer.Location = new System.Drawing.Point(274, 36);
+            this.btnVer.Location = new System.Drawing.Point(314, 36);
             this.btnVer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(134, 36);
@@ -79,13 +79,14 @@
             this.grillaMedicos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grillaMedicos.Name = "grillaMedicos";
             this.grillaMedicos.ReadOnly = true;
+            this.grillaMedicos.RowHeadersVisible = false;
             this.grillaMedicos.RowHeadersWidth = 62;
-            this.grillaMedicos.Size = new System.Drawing.Size(391, 324);
+            this.grillaMedicos.Size = new System.Drawing.Size(483, 324);
             this.grillaMedicos.TabIndex = 5;
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(555, 36);
+            this.btnMostrar.Location = new System.Drawing.Point(666, 36);
             this.btnMostrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(134, 36);
@@ -98,7 +99,7 @@
             // 
             this.lbMedicos.FormattingEnabled = true;
             this.lbMedicos.ItemHeight = 20;
-            this.lbMedicos.Location = new System.Drawing.Point(436, 90);
+            this.lbMedicos.Location = new System.Drawing.Point(559, 90);
             this.lbMedicos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbMedicos.Name = "lbMedicos";
             this.lbMedicos.Size = new System.Drawing.Size(346, 324);
@@ -107,7 +108,7 @@
             // lblGrilla
             // 
             this.lblGrilla.AutoSize = true;
-            this.lblGrilla.Location = new System.Drawing.Point(183, 444);
+            this.lblGrilla.Location = new System.Drawing.Point(221, 444);
             this.lblGrilla.Name = "lblGrilla";
             this.lblGrilla.Size = new System.Drawing.Size(45, 20);
             this.lblGrilla.TabIndex = 8;
@@ -116,7 +117,7 @@
             // lblListbox
             // 
             this.lblListbox.AutoSize = true;
-            this.lblListbox.Location = new System.Drawing.Point(578, 444);
+            this.lblListbox.Location = new System.Drawing.Point(701, 444);
             this.lblListbox.Name = "lblListbox";
             this.lblListbox.Size = new System.Drawing.Size(59, 20);
             this.lblListbox.TabIndex = 9;
@@ -126,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 490);
+            this.ClientSize = new System.Drawing.Size(941, 490);
             this.Controls.Add(this.lblListbox);
             this.Controls.Add(this.lblGrilla);
             this.Controls.Add(this.lbMedicos);
@@ -136,6 +137,7 @@
             this.Controls.Add(this.cbEspecialidad);
             this.Controls.Add(this.lblEspecialidades);
             this.Name = "frmClinica";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Clinica";
             this.Load += new System.EventHandler(this.frmClinica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grillaMedicos)).EndInit();

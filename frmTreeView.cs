@@ -22,23 +22,23 @@ namespace pryResumenLabo
             TreeNode Padre;
             TreeNode Hijo;
 
-            Abuelo = tvDatos.Nodes.Add("ALIMENTOS", "ALIMENTOS", 0, 3);
+            Abuelo = tvDatos.Nodes.Add("ALIMENTOS", "ALIMENTOS");
 
-            Padre = Abuelo.Nodes.Add("FRUTAS", "FRUTAS", 1, 3);
-            Hijo = Padre.Nodes.Add("UVA", "UVA", 2, 3);
+            Padre = Abuelo.Nodes.Add("FRUTAS", "FRUTAS");
+            Hijo = Padre.Nodes.Add("UVA", "UVA");
             Hijo.Tag = "300";
-            Hijo = Padre.Nodes.Add("PERA", "PERA", 2, 3);
+            Hijo = Padre.Nodes.Add("PERA", "PERA");
             Hijo.Tag = "400";
-            Hijo = Padre.Nodes.Add("NARANJA", "NARANJA", 2, 3);
+            Hijo = Padre.Nodes.Add("NARANJA", "NARANJA");
             Hijo.Tag = "500";
 
-            Padre = Abuelo.Nodes.Add("VERDURAS", "VERDURAS", 1, 3);
+            Padre = Abuelo.Nodes.Add("VERDURAS", "VERDURAS");
 
-            Hijo = Padre.Nodes.Add("ACELGA", "ACELGA", 2, 3);
+            Hijo = Padre.Nodes.Add("ACELGA", "ACELGA");
             Hijo.Tag = "600";
-            Hijo = Padre.Nodes.Add("LECHUGA", "LECHUGA", 2, 3);
+            Hijo = Padre.Nodes.Add("LECHUGA", "LECHUGA");
             Hijo.Tag = "700";
-            Hijo = Padre.Nodes.Add("REPOLLO", "REPOLLO", 2, 3);
+            Hijo = Padre.Nodes.Add("REPOLLO", "REPOLLO");
             Hijo.Tag = "700";
         }
         private void tvDatos_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
