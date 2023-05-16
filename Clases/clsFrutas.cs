@@ -5,48 +5,31 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace pryResumenLabo.Clases
 {
-    internal class clsBarrios
+    internal class clsFrutas
     {
         private string cadena;
         private OleDbConnection conector;
         private OleDbCommand comando;
         private OleDbDataAdapter adaptador;
         private DataTable tabla;
-
-        public clsBarrios()
+        public clsFrutas()
         {
             cadena = "provider=microsoft.jet.oledb.4.0;data source=COLEGIO.mdb";
             conector = new OleDbConnection(cadena);
             comando = new OleDbCommand();
             comando.Connection = conector;
             comando.CommandType = CommandType.TableDirect;
-            comando.CommandText = "Barrios";
+            comando.CommandText = "Frutas";
             adaptador = new OleDbDataAdapter(comando);
             tabla = new DataTable();
             adaptador.Fill(tabla);
-
-            DataColumn[] dc = new DataColumn[1];
-            dc[0] = tabla.Columns["barrio"];
-            tabla.PrimaryKey = dc;
         }
-        public string buscar(int barrio)
-        {
-            DataRow fila = tabla.Rows.Find(barrio);
-            return fila["nombre"].ToString();
-        }
-        public DataTable getBarrios()
+        public DataTable getFrutas()
         {
             return tabla;
-        }
-        public void cargarCombo(ComboBox combo)
-        {
-            combo.DisplayMember = "nombre";
-            combo.ValueMember = "barrio";
-            combo.DataSource = tabla;
         }
     }
 }

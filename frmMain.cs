@@ -44,5 +44,15 @@ namespace pryResumenLabo
         {
             new frmGuardarArchivo().ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new frmVentanasEmergentes().ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            new frmListView().ShowDialog();
+        }
     }
 }

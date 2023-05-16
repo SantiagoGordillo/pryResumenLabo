@@ -49,10 +49,24 @@
     <Compile Include="Clases\clsAlumnos.cs" />
     <Compile Include="Clases\clsBarrios.cs" />
     <Compile Include="Clases\clsEspecialidades.cs" />
+    <Compile Include="Clases\clsFrutas.cs" />
+    <Compile Include="Clases\clsLeGustan.cs" />
     <Compile Include="Clases\clsLocalidades.cs" />
     <Compile Include="Clases\clsMedicos.cs" />
     <Compile Include="Clases\clsTemperaturas.cs" />
     <Compile Include="Clases\clsPaises.cs" />
+    <Compile Include="frmAgregarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarAlumno.Designer.cs">
+      <DependentUpon>frmAgregarAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlumnosPorFruta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlumnosPorFruta.Designer.cs">
+      <DependentUpon>frmAlumnosPorFruta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmArchivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +97,12 @@
     <Compile Include="frmGuardarArchivo.Designer.cs">
       <DependentUpon>frmGuardarArchivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListView.Designer.cs">
+      <DependentUpon>frmListView.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,8 +127,20 @@
     <Compile Include="frmTreeView.Designer.cs">
       <DependentUpon>frmTreeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentanasEmergentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentanasEmergentes.Designer.cs">
+      <DependentUpon>frmVentanasEmergentes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgregarAlumno.resx">
+      <DependentUpon>frmAgregarAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlumnosPorFruta.resx">
+      <DependentUpon>frmAlumnosPorFruta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmArchivo.resx">
       <DependentUpon>frmArchivo.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +156,9 @@
     <EmbeddedResource Include="frmGuardarArchivo.resx">
       <DependentUpon>frmGuardarArchivo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListView.resx">
+      <DependentUpon>frmListView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTreeView.resx">
       <DependentUpon>frmTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentanasEmergentes.resx">
+      <DependentUpon>frmVentanasEmergentes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

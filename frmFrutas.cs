@@ -16,10 +16,17 @@ namespace pryResumenLabo
         {
             InitializeComponent();
         }
-
         private void consultarAlumnosPorParteDeSuNombreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new frmBuscarNombre().ShowDialog();
+        }
+        private void nuevoAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmAgregarAlumno().ShowDialog();
+        }
+        private void cantidadTotalDeAlumnosPorFrutaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmAlumnosPorFruta().ShowDialog();
         }
     }
 }

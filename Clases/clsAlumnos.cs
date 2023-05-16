@@ -19,6 +19,53 @@ namespace pryResumenLabo.Clases
         private DataTable tabla;
         private clsBarrios b;
 
+        private int dni;
+        private string nombre;
+        private string sexo;
+        private string foto;
+        private int barrio;
+
+        public int Dni                  // public int Dni
+        {                               // {
+            get => dni;                 //   get { return dni; }
+            set => dni = value;         //   set { dni = value; }
+        }                               // }
+
+        public string Nombre
+        {
+            get => nombre;
+            set => nombre = value;
+        }
+
+        public string Sexo
+        {
+            get => sexo;
+            set => sexo = value;
+        }
+
+        public string Foto
+        {
+            get => foto;
+            set => foto = value;
+        }
+        public int Barrio
+        {
+            get => barrio;
+            set => barrio = value;
+        }
+        //public Alumnos()
+        //{
+        //    conector = new OleDbConnection(Properties.Settings.Default.CADENA);
+        //    comando = new OleDbCommand();
+
+        //    comando.Connection = conector;
+        //    comando.CommandType = CommandType.TableDirect;
+        //    comando.CommandText = "Alumnos";
+
+        //    adaptador = new OleDbDataAdapter(comando);
+        //    tabla = new DataTable();
+        //    adaptador.Fill(tabla);
+        //}
         public clsAlumnos()
         {
             cadena = "provider=microsoft.jet.oledb.4.0;data source=COLEGIO.mdb";
@@ -49,6 +96,19 @@ namespace pryResumenLabo.Clases
                     dgv.Rows.Add(fila["dni"], fila["nombre"], sexo, fila["foto"], nb);
                 }
             }
+        }
+        public void grabar()
+        {
+            DataRow fila = tabla.NewRow();
+            fila["dni"] = dni;
+            fila["nombre"] = nombre;
+            fila["sexo"] = sexo;
+            fila["foto"] = foto;
+            fila["barrio"] = barrio;
+            tabla.Rows.Add(fila);
+
+            OleDbCommandBuilder cb = new OleDbCommandBuilder(adaptador);
+            adaptador.Update(tabla);
         }
     }
 }

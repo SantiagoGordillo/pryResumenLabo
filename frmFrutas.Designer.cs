@@ -58,7 +58,7 @@
             this.consultasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(642, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,6 +90,7 @@
             this.nuevoAlumnoToolStripMenuItem.Name = "nuevoAlumnoToolStripMenuItem";
             this.nuevoAlumnoToolStripMenuItem.Size = new System.Drawing.Size(353, 34);
             this.nuevoAlumnoToolStripMenuItem.Text = "Nuevo Alumno";
+            this.nuevoAlumnoToolStripMenuItem.Click += new System.EventHandler(this.nuevoAlumnoToolStripMenuItem_Click);
             // 
             // quéFrutasLeGustaAlAlumnoToolStripMenuItem
             // 
@@ -150,6 +151,7 @@
             this.cantidadTotalDeAlumnosPorFrutaToolStripMenuItem.Name = "cantidadTotalDeAlumnosPorFrutaToolStripMenuItem";
             this.cantidadTotalDeAlumnosPorFrutaToolStripMenuItem.Size = new System.Drawing.Size(490, 34);
             this.cantidadTotalDeAlumnosPorFrutaToolStripMenuItem.Text = "Cantidad total de alumnos por fruta";
+            this.cantidadTotalDeAlumnosPorFrutaToolStripMenuItem.Click += new System.EventHandler(this.cantidadTotalDeAlumnosPorFrutaToolStripMenuItem_Click);
             // 
             // nombresDeAlumnosQueNoLeGustaUnaFrutaToolStripMenuItem
             // 
@@ -186,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(642, 189);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmFrutas";
             this.Text = "frmFrutas";
